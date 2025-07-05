@@ -4,7 +4,7 @@ pipeline {
     environment {
        
         DOCKER_REGISTRY = "docker.io" 
-        IMAGE_NAME = "my-jenkins-k8s-app"
+        IMAGE_NAME = "aqx1/my-jenkins-k8s-app"
     }
 
     stages {
