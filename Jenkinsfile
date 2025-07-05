@@ -66,16 +66,16 @@ pipeline {
             }
         }
 
-       // stage('Cleanup Kubernetes Resources (Optional)') {
-         //   steps {
-           //     script {
-             //       echo "Deleting Kubernetes Deployment and Service..."
-               //     sh "kubectl delete -f service.yaml || true"
-                 //   sh "kubectl delete -f deployment.yaml || true"
-                   // echo "Kubernetes resources cleaned up."
-                //}
-           // }
-       // }
+        stage('Cleanup Kubernetes Resources (Optional)') {
+            steps {
+                script {
+                    echo "Deleting Kubernetes Deployment and Service..."
+                    sh "kubectl delete -f service.yaml || true"
+                    sh "kubectl delete -f deployment.yaml || true"
+                    echo "Kubernetes resources cleaned up."
+                }
+            }
+        }
     }
 
     post {
