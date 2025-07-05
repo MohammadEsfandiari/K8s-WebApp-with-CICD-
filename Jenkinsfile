@@ -3,7 +3,7 @@ pipeline {
 
     environment {
        
-        DOCKER_REGISTRY = "aqx1" 
+        DOCKER_REGISTRY = "docker.io" 
         IMAGE_NAME = "my-jenkins-k8s-app"
     }
 
